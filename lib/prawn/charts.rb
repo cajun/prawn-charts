@@ -6,7 +6,6 @@ require File.dirname(__FILE__) + '/charts/bar'
 require File.dirname(__FILE__) + '/charts/stacked_bar'
 require File.dirname(__FILE__) + '/charts/line'
 require File.dirname(__FILE__) + '/charts/combo'
-require File.dirname(__FILE__) + '/charts/legend'
 require File.dirname(__FILE__) + '/charts/x_axis'
 require File.dirname(__FILE__) + '/charts/y_axis'
 
@@ -123,7 +122,7 @@ module Prawn
     # @return [Prawn::Charts::Combo]
     def combo_chart opts={}, &block
       chart = Prawn::Charts::Combo.new(self, opts)
-      yield chart if block_given?
+      #yield chart if block_given?
       chart.draw
     end
   end

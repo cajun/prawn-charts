@@ -95,13 +95,13 @@ module Prawn
       end
 
       def label_height
-        @label_height ||= @series.map{|item| height_of(item[:name]) }.max
+        @label_height ||= @series.map{|item| height_of(item[:name]) }.max - 1
       end
       alias_method :side, :label_height
 
 
       def label_width
-        @label_width ||= @series.map{|item| width_of(item[:name]) }.max
+        @label_width ||= @series.map{|item| width_of(item[:name]) }.max - 1
       end
 
     end
