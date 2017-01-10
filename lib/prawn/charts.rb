@@ -8,6 +8,7 @@ require File.dirname(__FILE__) + '/charts/line'
 require File.dirname(__FILE__) + '/charts/combo'
 require File.dirname(__FILE__) + '/charts/x_axis'
 require File.dirname(__FILE__) + '/charts/y_axis'
+require File.dirname(__FILE__) + '/charts/legend'
 
 module Prawn
   class Document
